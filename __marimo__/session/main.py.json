@@ -127,6 +127,84 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "ueIK",
+      "code_hash": "2f90a3a7e92d8ff82d6c69323f80d9d4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='ueIK-0' random-id='7acc33c8-4099-db59-09b3-bdb5168ef345'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;&#92;&quot;:&#92;&quot;make&#92;&quot;,&#92;&quot;value&#92;&quot;:0},{&#92;&quot;&#92;&quot;:&#92;&quot;model&#92;&quot;,&#92;&quot;value&#92;&quot;:0},{&#92;&quot;&#92;&quot;:&#92;&quot;year&#92;&quot;,&#92;&quot;value&#92;&quot;:0},{&#92;&quot;&#92;&quot;:&#92;&quot;engine_fuel_type&#92;&quot;,&#92;&quot;value&#92;&quot;:3},{&#92;&quot;&#92;&quot;:&#92;&quot;engine_hp&#92;&quot;,&#92;&quot;value&#92;&quot;:69},{&#92;&quot;&#92;&quot;:&#92;&quot;engine_cylinders&#92;&quot;,&#92;&quot;value&#92;&quot;:30},{&#92;&quot;&#92;&quot;:&#92;&quot;transmission_type&#92;&quot;,&#92;&quot;value&#92;&quot;:0},{&#92;&quot;&#92;&quot;:&#92;&quot;driven_wheels&#92;&quot;,&#92;&quot;value&#92;&quot;:0},{&#92;&quot;&#92;&quot;:&#92;&quot;number_of_doors&#92;&quot;,&#92;&quot;value&#92;&quot;:6},{&#92;&quot;&#92;&quot;:&#92;&quot;market_category&#92;&quot;,&#92;&quot;value&#92;&quot;:3742}]&quot;' data-total-rows='16' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;value&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[[&quot;&quot;,[&quot;string&quot;,&quot;object&quot;]]]' data-has-stable-row-id='false' data-lazy='false' data-preload='false' data-download-file-name='&quot;download&quot;'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lINk",
+      "code_hash": "7bea92da8710f48d0b23b368eda92c82",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "gIgz",
+      "code_hash": "d3473ee95d6f6429f92ee0d6c7444b7d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "oAwE",
+      "code_hash": "dd59b4007ecb6a1d977c9c47d791e643",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RvkB",
+      "code_hash": "c5177c17cb2acdaeb1acd49b94d55fbb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "jqJN",
+      "code_hash": "170b98e4e09d272be74269d504a3e32e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='jqJN-0' random-id='fa0f2f68-15a3-129a-ad9d-842caab0d075'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;&#92;&quot;:2735,&#92;&quot;make&#92;&quot;:&#92;&quot;Chevrolet&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;Cobalt&#92;&quot;,&#92;&quot;year&#92;&quot;:2008,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;regular unleaded&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:148.0,&#92;&quot;engine_cylinders&#92;&quot;:4.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;MANUAL&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;front wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:2.0,&#92;&quot;market_category&#92;&quot;:NaN,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Compact&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;Coupe&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:33,&#92;&quot;city_mpg&#92;&quot;:24,&#92;&quot;popularity&#92;&quot;:1385,&#92;&quot;msrp&#92;&quot;:14410},{&#92;&quot;&#92;&quot;:6720,&#92;&quot;make&#92;&quot;:&#92;&quot;Toyota&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;Matrix&#92;&quot;,&#92;&quot;year&#92;&quot;:2012,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;regular unleaded&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:132.0,&#92;&quot;engine_cylinders&#92;&quot;:4.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;AUTOMATIC&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;front wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:4.0,&#92;&quot;market_category&#92;&quot;:&#92;&quot;Hatchback&#92;&quot;,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Compact&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;4dr Hatchback&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:32,&#92;&quot;city_mpg&#92;&quot;:25,&#92;&quot;popularity&#92;&quot;:2031,&#92;&quot;msrp&#92;&quot;:19685},{&#92;&quot;&#92;&quot;:5878,&#92;&quot;make&#92;&quot;:&#92;&quot;Subaru&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;Impreza&#92;&quot;,&#92;&quot;year&#92;&quot;:2016,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;regular unleaded&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:148.0,&#92;&quot;engine_cylinders&#92;&quot;:4.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;AUTOMATIC&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;all wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:4.0,&#92;&quot;market_category&#92;&quot;:&#92;&quot;Hatchback&#92;&quot;,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Compact&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;4dr Hatchback&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:37,&#92;&quot;city_mpg&#92;&quot;:28,&#92;&quot;popularity&#92;&quot;:640,&#92;&quot;msrp&#92;&quot;:19795},{&#92;&quot;&#92;&quot;:11190,&#92;&quot;make&#92;&quot;:&#92;&quot;Volkswagen&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;Vanagon&#92;&quot;,&#92;&quot;year&#92;&quot;:1991,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;regular unleaded&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:90.0,&#92;&quot;engine_cylinders&#92;&quot;:4.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;MANUAL&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;rear wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:3.0,&#92;&quot;market_category&#92;&quot;:NaN,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Large&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;Passenger Minivan&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:18,&#92;&quot;city_mpg&#92;&quot;:16,&#92;&quot;popularity&#92;&quot;:873,&#92;&quot;msrp&#92;&quot;:2000},{&#92;&quot;&#92;&quot;:4554,&#92;&quot;make&#92;&quot;:&#92;&quot;Ford&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;F-150&#92;&quot;,&#92;&quot;year&#92;&quot;:2017,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;flex-fuel (unleaded/E85)&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:385.0,&#92;&quot;engine_cylinders&#92;&quot;:8.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;AUTOMATIC&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;four wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:4.0,&#92;&quot;market_category&#92;&quot;:&#92;&quot;Flex Fuel&#92;&quot;,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Large&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;Crew Cab Pickup&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:21,&#92;&quot;city_mpg&#92;&quot;:15,&#92;&quot;popularity&#92;&quot;:5657,&#92;&quot;msrp&#92;&quot;:56260},{&#92;&quot;&#92;&quot;:8001,&#92;&quot;make&#92;&quot;:&#92;&quot;Volkswagen&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;Rabbit&#92;&quot;,&#92;&quot;year&#92;&quot;:2008,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;regular unleaded&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:170.0,&#92;&quot;engine_cylinders&#92;&quot;:5.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;MANUAL&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;front wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:4.0,&#92;&quot;market_category&#92;&quot;:&#92;&quot;Hatchback&#92;&quot;,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Compact&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;4dr Hatchback&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:29,&#92;&quot;city_mpg&#92;&quot;:22,&#92;&quot;popularity&#92;&quot;:873,&#92;&quot;msrp&#92;&quot;:17575},{&#92;&quot;&#92;&quot;:2882,&#92;&quot;make&#92;&quot;:&#92;&quot;Bentley&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;Continental GTC&#92;&quot;,&#92;&quot;year&#92;&quot;:2013,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;premium unleaded (required)&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:500.0,&#92;&quot;engine_cylinders&#92;&quot;:8.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;AUTOMATIC&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;all wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:2.0,&#92;&quot;market_category&#92;&quot;:&#92;&quot;Exotic,Luxury,High-Performance&#92;&quot;,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Midsize&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;Convertible&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:24,&#92;&quot;city_mpg&#92;&quot;:14,&#92;&quot;popularity&#92;&quot;:520,&#92;&quot;msrp&#92;&quot;:191400},{&#92;&quot;&#92;&quot;:649,&#92;&quot;make&#92;&quot;:&#92;&quot;BMW&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;6 Series&#92;&quot;,&#92;&quot;year&#92;&quot;:2015,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;premium unleaded (required)&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:315.0,&#92;&quot;engine_cylinders&#92;&quot;:6.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;AUTOMATIC&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;rear wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:2.0,&#92;&quot;market_category&#92;&quot;:&#92;&quot;Luxury,Performance&#92;&quot;,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Midsize&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;Coupe&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:32,&#92;&quot;city_mpg&#92;&quot;:21,&#92;&quot;popularity&#92;&quot;:3916,&#92;&quot;msrp&#92;&quot;:76100},{&#92;&quot;&#92;&quot;:616,&#92;&quot;make&#92;&quot;:&#92;&quot;Maybach&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;57&#92;&quot;,&#92;&quot;year&#92;&quot;:2012,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;premium unleaded (required)&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:543.0,&#92;&quot;engine_cylinders&#92;&quot;:12.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;AUTOMATIC&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;rear wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:4.0,&#92;&quot;market_category&#92;&quot;:&#92;&quot;Exotic,Luxury&#92;&quot;,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Large&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;Sedan&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:16,&#92;&quot;city_mpg&#92;&quot;:10,&#92;&quot;popularity&#92;&quot;:67,&#92;&quot;msrp&#92;&quot;:379050},{&#92;&quot;&#92;&quot;:4459,&#92;&quot;make&#92;&quot;:&#92;&quot;Ford&#92;&quot;,&#92;&quot;model&#92;&quot;:&#92;&quot;F-150 Heritage&#92;&quot;,&#92;&quot;year&#92;&quot;:2004,&#92;&quot;engine_fuel_type&#92;&quot;:&#92;&quot;regular unleaded&#92;&quot;,&#92;&quot;engine_hp&#92;&quot;:202.0,&#92;&quot;engine_cylinders&#92;&quot;:6.0,&#92;&quot;transmission_type&#92;&quot;:&#92;&quot;MANUAL&#92;&quot;,&#92;&quot;driven_wheels&#92;&quot;:&#92;&quot;four wheel drive&#92;&quot;,&#92;&quot;number_of_doors&#92;&quot;:2.0,&#92;&quot;market_category&#92;&quot;:NaN,&#92;&quot;vehicle_size&#92;&quot;:&#92;&quot;Large&#92;&quot;,&#92;&quot;vehicle_style&#92;&quot;:&#92;&quot;Regular Cab Pickup&#92;&quot;,&#92;&quot;highway_mpg&#92;&quot;:18,&#92;&quot;city_mpg&#92;&quot;:13,&#92;&quot;popularity&#92;&quot;:5657,&#92;&quot;msrp&#92;&quot;:26030}]&quot;' data-total-rows='11914' data-total-columns='16' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;make&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;model&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;year&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;engine_fuel_type&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;engine_hp&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;engine_cylinders&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;transmission_type&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;driven_wheels&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;number_of_doors&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;market_category&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;vehicle_size&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;vehicle_style&quot;,[&quot;string&quot;,&quot;object&quot;]],[&quot;highway_mpg&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;city_mpg&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;popularity&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;msrp&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[[&quot;&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-has-stable-row-id='false' data-lazy='false' data-preload='false' data-download-file-name='&quot;df&quot;'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
     }
   ]
 }

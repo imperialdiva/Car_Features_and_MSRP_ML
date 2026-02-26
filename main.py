@@ -67,5 +67,47 @@ def _(log_price, sns):
     return
 
 
+@app.cell
+def _(df):
+    df.isnull().sum()
+    return
+
+
+@app.cell
+def _(df):
+    n = len(df)
+    return (n,)
+
+
+@app.cell
+def _(n):
+    n_val = int(n*0.2)
+    n_test = int(n*0.2)
+    n_train = n - (n_val + n_test)
+    return n_train, n_val
+
+
+@app.cell
+def _(n, np):
+    np.random.seed(2)
+    idx = np.arange(n)
+    np.random.shuffle(idx)
+    return (idx,)
+
+
+@app.cell
+def _(df, idx):
+    df_shuffled = df.iloc[idx]
+    return (df_shuffled,)
+
+
+@app.cell
+def _(df_shuffled, n_train, n_val):
+    df_train = df_shuffled.iloc[:n_train].copy()
+    df_test = df_shuffled.iloc[n_train:n_train+n_val].copy()
+    df_val = df_shuffled.iloc[n_train+n_val:].copy()
+    return
+
+
 if __name__ == "__main__":
     app.run()
