@@ -13,7 +13,7 @@ def _():
     import seaborn as sns
 
     df = pd.read_csv("data.csv")
-    return df, np, sns
+    return df, np, plt, sns
 
 
 @app.cell
@@ -106,6 +106,86 @@ def _(df_shuffled, n_train, n_val):
     df_train = df_shuffled.iloc[:n_train].copy()
     df_test = df_shuffled.iloc[n_train:n_train+n_val].copy()
     df_val = df_shuffled.iloc[n_train+n_val:].copy()
+    return df_test, df_train, df_val
+
+
+@app.cell
+def _(df_train):
+    # Посмотрите все доступные колонки
+    df_train.columns.tolist()
+    return
+
+
+@app.cell
+def _(df_test, df_train, df_val, np):
+    y_train = np.log1p(df_train.msrp.values)
+    y_test = np.log1p(df_test.msrp.values)
+    y_val = np.log1p(df_val.msrp.values)
+    return (y_train,)
+
+
+@app.cell
+def _(df_test, df_train, df_val):
+    del df_train['msrp']
+    del df_test['msrp']
+    del df_val['msrp']
+    return
+
+
+@app.cell
+def _(np):
+    def train_linear_regression(X, y):
+        ones = np.ones(X.shape[0])
+        X = np.column_stack([ones, X])
+
+        XTX = X.T.dot(X)
+        XTX_inv = np.linalg.inv(XTX)
+        w = XTX_inv.dot(X.T).dot(y)
+
+        return w[0], w[1:]
+
+    return (train_linear_regression,)
+
+
+@app.cell
+def _(df_train):
+    base = ['engine_hp', 'engine_cylinders', 'highway_mpg', 'city_mpg', 'popularity']
+    df_num = df_train[base].copy()
+    df_num = df_num.fillna(0)
+    return (df_num,)
+
+
+@app.cell
+def _(df_num):
+    X_train = df_num.values
+    return (X_train,)
+
+
+@app.cell
+def _(X_train):
+    X_train
+    return
+
+
+@app.cell
+def _(X_train, train_linear_regression, y_train):
+    w_0, w = train_linear_regression(X_train, y_train)
+    return w, w_0
+
+
+@app.cell
+def _(X_train, w, w_0):
+    y_pred = w_0 + X_train.dot(w)
+    return (y_pred,)
+
+
+@app.cell
+def _(plt, sns, y_pred, y_train):
+    sns.histplot(y_pred, label='prediction')
+
+    sns.histplot(y_train, label='target')
+
+    plt.legend()
     return
 
 
