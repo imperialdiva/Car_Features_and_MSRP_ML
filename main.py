@@ -38,7 +38,7 @@ def _(df):
 
 
 @app.cell
-def _(df):
+def hbfbghg(df):
     df
     return
 
@@ -186,6 +186,12 @@ def _(plt, sns, y_pred, y_train):
     sns.histplot(y_train, label='target')
 
     plt.legend()
+    return
+
+
+@app.cell
+def _():
+    print("hellow")
     return
 
 
