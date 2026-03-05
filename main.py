@@ -31,14 +31,14 @@ def _(df):
 @app.cell
 def _(df):
     df.columns = df.columns.str.lower().str.replace(' ', '_')
-    string_columns = list(df.dtypes[df.dtypes == 'Object'].index)
+    string_columns = list(df.dtypes[df.dtypes == 'object'].index)
     for col in string_columns:
         df[col] = df[col].str.lower().str.replace(' ', '_')
     return
 
 
 @app.cell
-def hbfbghg(df):
+def _(df):
     df
     return
 
@@ -104,8 +104,8 @@ def _(df, idx):
 @app.cell
 def _(df_shuffled, n_train, n_val):
     df_train = df_shuffled.iloc[:n_train].copy()
-    df_test = df_shuffled.iloc[n_train:n_train+n_val].copy()
-    df_val = df_shuffled.iloc[n_train+n_val:].copy()
+    df_val = df_shuffled.iloc[n_train:n_train+n_val].copy()
+    df_test = df_shuffled.iloc[n_train+n_val:].copy()
     return df_test, df_train, df_val
 
 
@@ -119,16 +119,16 @@ def _(df_train):
 @app.cell
 def _(df_test, df_train, df_val, np):
     y_train = np.log1p(df_train.msrp.values)
-    y_test = np.log1p(df_test.msrp.values)
     y_val = np.log1p(df_val.msrp.values)
-    return (y_train,)
+    y_test = np.log1p(df_test.msrp.values)
+    return y_train, y_val
 
 
 @app.cell
 def _(df_test, df_train, df_val):
     del df_train['msrp']
-    del df_test['msrp']
     del df_val['msrp']
+    del df_test['msrp']
     return
 
 
@@ -148,50 +148,63 @@ def _(np):
 
 
 @app.cell
-def _(df_train):
+def _():
     base = ['engine_hp', 'engine_cylinders', 'highway_mpg', 'city_mpg', 'popularity']
-    df_num = df_train[base].copy()
-    df_num = df_num.fillna(0)
-    return (df_num,)
+    return (base,)
 
 
 @app.cell
-def _(df_num):
-    X_train = df_num.values
-    return (X_train,)
+def function_1(np):
+    def rmse(y, y_pred):
+        error = y_pred - y
+        mse = (error ** 2).mean()
+        return np.sqrt(mse)
+
+    return (rmse,)
 
 
 @app.cell
-def _(X_train):
-    X_train
-    return
+def function(base):
+    def prepare_X(df):
+        df = df.copy()
+        features = base.copy()
+
+        df['age'] = 2017 - df.year
+        features.append('age')
+
+        df_num = df[features]
+        df_num = df_num.fillna(0)
+        X = df_num.values
+        return X
+
+    return (prepare_X,)
 
 
 @app.cell
-def _(X_train, train_linear_regression, y_train):
+def _(df_train, prepare_X, train_linear_regression, y_train):
+    X_train = prepare_X(df_train)
     w_0, w = train_linear_regression(X_train, y_train)
     return w, w_0
 
 
 @app.cell
-def _(X_train, w, w_0):
-    y_pred = w_0 + X_train.dot(w)
+def _(df_val, prepare_X, rmse, w, w_0, y_val):
+    X_val = prepare_X(df_val)
+    y_pred = w_0 + X_val.dot(w)
+    print('validation:', rmse(y_val, y_pred))
     return (y_pred,)
 
 
 @app.cell
-def _(plt, sns, y_pred, y_train):
+def _(plt, sns, y_pred, y_val):
     sns.histplot(y_pred, label='prediction')
-
-    sns.histplot(y_train, label='target')
-
+    sns.histplot(y_val, label='target')
     plt.legend()
     return
 
 
 @app.cell
 def _():
-    print("hellow")
     return
 
 
