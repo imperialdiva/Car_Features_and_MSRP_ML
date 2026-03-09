@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.19.11"
+__generated_with = "0.20.2"
 app = marimo.App(width="medium")
 
 
@@ -13,18 +13,12 @@ def _():
     import seaborn as sns
 
     df = pd.read_csv("data.csv")
-    return df, np, plt, sns
+    return df, np, pd, plt, sns
 
 
 @app.cell
 def _(df):
     df
-    return
-
-
-@app.cell
-def _(df):
-    df.head()
     return
 
 
@@ -44,32 +38,8 @@ def _(df):
 
 
 @app.cell
-def _(df, sns):
-    sns.histplot(df.msrp, bins=40)
-    return
-
-
-@app.cell
-def _(df, sns):
-    sns.histplot(df.msrp[df.msrp < 100000], bins=40)
-    return
-
-
-@app.cell
 def _(df, np):
     log_price = np.log1p(df.msrp)
-    return (log_price,)
-
-
-@app.cell
-def _(log_price, sns):
-    sns.histplot(log_price)
-    return
-
-
-@app.cell
-def _(df):
-    df.isnull().sum()
     return
 
 
@@ -111,7 +81,6 @@ def _(df_shuffled, n_train, n_val):
 
 @app.cell
 def _(df_train):
-    # Посмотрите все доступные колонки
     df_train.columns.tolist()
     return
 
@@ -121,7 +90,7 @@ def _(df_test, df_train, df_val, np):
     y_train = np.log1p(df_train.msrp.values)
     y_val = np.log1p(df_val.msrp.values)
     y_test = np.log1p(df_test.msrp.values)
-    return y_test, y_train, y_val
+    return y_train, y_val
 
 
 @app.cell
@@ -160,7 +129,7 @@ def function_1(np):
         mse = (error ** 2).mean()
         return np.sqrt(mse)
 
-    return (rmse,)
+    return
 
 
 @app.cell
@@ -253,37 +222,9 @@ def _(df):
 
 
 @app.cell
-def _(
-    df_test,
-    df_train,
-    df_val,
-    prepare_X,
-    rmse,
-    train_linear_regression_reg,
-    y_test,
-    y_train,
-    y_val,
-):
-    X_train = prepare_X(df_train)
-
-    w_0, w = train_linear_regression_reg(X_train, y_train, r=0.01)
-
- 
-
-    X_val = prepare_X(df_val)
-
-    y_pred = w_0 + X_val.dot(w)
-
-    print('validation:', rmse(y_val, y_pred))
-
- 
-
-    X_test = prepare_X(df_test)
-
-    y_pred = w_0 + X_test.dot(w)
-
-    print('test:', rmse(y_test, y_pred))
-    return (y_pred,)
+def _(X_train, train_linear_regression_reg, y_train):
+    w_0, w = train_linear_regression_reg(X_train, y_train, r=0.01)
+    return w, w_0
 
 
 @app.cell
@@ -291,6 +232,70 @@ def _(plt, sns, y_pred, y_val):
     sns.histplot(y_pred, label='prediction')
     sns.histplot(y_val, label='target')
     plt.legend()
+    return
+
+
+@app.cell
+def _():
+    ad = {
+
+        'city_mpg': 40,
+
+        'driven_wheels': 'all_wheel_drive',
+
+        'engine_cylinders': 4.0,
+
+        'engine_fuel_type': 'regular_unleaded',
+
+        'engine_hp': 222.0,
+
+        'highway_mpg': 37,
+
+        'make': 'toyota',
+
+        'market_category': 'crossover,performance',
+
+        'model': 'venza',
+
+        'number_of_doors': 4.0,
+
+        'popularity': 2031,
+
+        'transmission_type': 'automatic',
+
+        'vehicle_size': 'midsize',
+
+        'vehicle_style': 'wagon',
+
+        'year': 2025
+
+    }
+    return (ad,)
+
+
+@app.cell
+def _(ad, pd, prepare_X):
+    df_test1 = pd.DataFrame([ad])
+    X_test_1 = prepare_X(df_test1)
+    return (X_test_1,)
+
+
+@app.cell
+def _(X_test_1, w, w_0):
+    y_pred1 = w_0 + X_test_1.dot(w)
+    return (y_pred1,)
+
+
+@app.cell
+def _(np, y_pred1):
+    suggestion = np.expm1(y_pred1)
+
+    return (suggestion,)
+
+
+@app.cell
+def _(suggestion):
+    suggestion
     return
 
 
